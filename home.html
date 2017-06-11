@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Teacher's Day</title>
+</head>
+<script src="jQuery 214.js"></script>
+<style>
+
+html{overflow-x: hidden;overflow-y: hidden;}
+body
+{
+	
+	background-position: left;
+	background-repeat: no-repeat;
+    background-image:url(edu.jpg);
+	background-attachment:fixed;
+	
+	
+}
+
+#quote
+{
+	padding: 1.5%;
+	width: 85%;	
+	margin-left: 0%;	
+	font-family: robot,segoe ui;
+	font-size: 200%;
+	background: Transparent;
+	text-align:center;	
+	color:White;
+	opacity: 0;
+	animation:side 5s normal;
+	text-shadow: 0px 0px 20px Gold;
+}
+#quoter,#quoter2
+{
+	
+	font-size: 90%;	
+	opacity:0.9;	
+	font-family: roboto ,segoe ui;
+}
+#quoter2
+{
+	font-size: 70%;
+}
+@font-face {
+    font-family: ES;
+    src: url(es.ttf);
+}
+#box1
+{
+	margin: 0 auto;
+	margin-top:-4%;
+	padding:2%;
+	width: 70%;
+	height:50%;
+	background:Transparent;
+	font-family: ES;
+	font-size:600%;
+	color:White;
+	transform: rotate(-8deg);
+	animation: rot 2s normal;
+	
+}
+#wish
+{
+	opacity: 0;
+	text-shadow: 0px 0px 10px Gold;
+
+}
+.path {
+  stroke-dasharray: 20;
+}
+#baloon
+{
+
+	width:50%;
+	margin-left: 30%;
+	margin-top: -300px;	
+	animation: up 3s normal;	
+}
+
+@keyframes up
+{
+	from{margin-top:300px;}	
+	to{margin-top:-300px;}
+}
+@keyframes up1
+{
+	from{margin-top:300px;}	
+	to{margin-top:-6%;}
+}
+
+@keyframes side
+{
+	from{margin-left: -100%;}	
+	to{margin-left: 0%;}
+}
+
+@keyframes rot
+{
+	from{transform: rotate(0deg);}	
+	to{transform: rotate(-8deg);}
+}
+
+@keyframes bounce {
+	0% {top: 0;}
+	40% {}
+	50% {top: 240px;
+		height: 140px;}
+	55% {top: 260px; height: 120px;}
+	65% {top: 220px; height: 140px; }
+	95% {top: 0;}
+	100% {top: 0;}
+}
+#thanks
+{
+	font-family: Freestyle Script;
+	font-size: 310%;
+	color:White;
+	opacity:0;
+	padding-top: 12%; 
+	
+	
+}
+</style>
+<body>
+<div id="quote">
+<span id="quoter">
+"One good teacher in a lifetime may sometimes change a delinquent into a solid citizen"</span><span id="quoter2"> - Philip Wylie</span></div>
+
+
+
+<div id="box1">
+<span id="celeb"><img src="celeb.gif" width="150" height="150" alt="" id="celebimg"></span>
+<span id="wish">Happy Teachers' Day!</span>
+</div><br><br><br>
+
+<div id="img">
+<div id="cont">
+<br>To our beloved teachers,<br>
+<ul id="names">
+<li class="item">Sushma</li>
+<li>Srisha</li>
+<li>Manasa</li>
+<li>Poornima</li>
+<li>Nanjudswami</li>
+<li>Vanitha</li>
+</ul>
+</div>
+<div id="thanks">Yours beloved,<br>3rd Sem, Cse 'A' </div>
+<style>
+#names
+{
+	list-style-type: none;
+	
+}
+#cont
+{
+	float:right;
+ 	margin-right: 25%;
+	margin-top: -6%;
+	font-family: segoe ui;
+	font-size: 140%;
+	color:White;
+	text-shadow: 0px 0px 10px Gold;
+	box-shadow: 0px 0px 40px #ffe57f inset;
+	border-radius: 20% 0% 20% 0%;
+	padding: 1%;
+	animation: up1 3s normal;
+}
+</style>
+
+<div id="baloon"><img src="balloons.gif" width="250" height="340" alt=""/>
+
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(e) 
+{
+		
+	$("#wish").animate(
+					{   								
+						opacity: 0.8
+					},1500);
+					
+	$("#quote").animate(
+					{ 							
+						opacity:0.8
+					},3000);	
+	$("#thanks").animate(
+					{ 							
+						opacity:0.5
+					},3000);
+
+		
+			
+});
+
+
+</script>
+</body>
+</html>
